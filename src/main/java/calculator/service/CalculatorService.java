@@ -52,6 +52,9 @@ public class CalculatorService {
         int sum = 0;
 
         for (String splitNum : splitNums) {
+            if (Integer.parseInt(splitNum) < 0) {
+                throw new IllegalArgumentException("입력값은 양수만 가능합니다.");
+            }
             sum += Integer.parseInt(splitNum);
         }
 

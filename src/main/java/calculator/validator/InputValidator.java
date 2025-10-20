@@ -15,7 +15,7 @@ public class InputValidator {
             validateDelimiterPart(parsedInput, customDelimiter);
         }
 
-        //validateContentPart(parsedInput, customDelimiter);
+        validateContentPart(parsedInput, customDelimiter);
     }
 
     private void validateDelimiterPart(ParsedInput parsedInput, String customDelimiter) {
